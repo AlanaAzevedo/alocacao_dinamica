@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 	char *memoria_alocada;
 	// Aloca a quantidade de memoria solicitado (50 x char)
 	// e inicializa o ponteiro com posicao da memoria.
-	memoria_alocada = malloc (50 * sizeof (char));
+	memoria_alocada = calloc (50, sizeof (char));
 	// se o ponteiro foi inicializado com o valor nulo
 	if (memoria_alocada == NULL)
 	{
